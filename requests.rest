@@ -1,0 +1,29 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todos/add
+Content-Type: application/json
+
+{
+    "text": "Get the Milk 1"
+}
+
+###
+
+PUT http://localhost:3001/todos/update/633ffeb9242a912153214a91
+Content-Type: application/json
+
+{
+  "_id": "633ffeb9242a912153214a91",
+  "text": "bjlElamuruga",
+  "complete": true,
+  "timestamp": "1665854745132",
+}
+
+###
+
+DELETE http://localhost:3001/todos/delete/638234627b55c10b6b2604e4
+
+###
+GET http://localhost:3001/todos/complete/633ffeb9242a912153214a91
